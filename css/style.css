@@ -12,7 +12,8 @@ body{
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -65,4 +66,98 @@ banner styles
 .banner-image img{
     width: 618px;
     height: 577px;
+}
+
+
+/* ---------------
+navigation styles
+-----------------*/
+.nav-blogs{
+    width: 1320px;
+    display: flex;
+    margin-top: 130px;
+    column-gap: 24px;
+}
+nav{
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+nav button{
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+}
+.normal{
+    background-color: white;
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.active{
+    background: #136FC3;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* ----------
+blogs styles
+-------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 312px;
+    height: 362px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.transfer{
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 20px;
+}
+.transfer:hover{
+    background-color: #136FC3;
+    color: white;
+    transition: ease-in;
+    transition-duration: 0.3s;
+}
+.blog img{
+    width: 312px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+}
+.title{
+    margin: 0px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+}
+.status{
+    margin-left: 20px;
+    display: flex;
+    column-gap: 30px;
+}
+.status p{
+    margin: 0px;
 }
