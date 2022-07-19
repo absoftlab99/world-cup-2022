@@ -102,7 +102,6 @@ nav{
 .btn a{
     text-decoration: none;
     color: #161616;
-    line-height: 64px;
     display: block;
 }
 #active{
@@ -250,4 +249,115 @@ upcomoing matchs styles
     width: 200px;
     height: 64px;
     border-radius: 10px;
+}
+
+
+/* ----------------------------
+media quiery for mobile device 
+-------------------------------*/
+@media (max-width: 576px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        width: 393px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 393px;
+    }
+    .banner{
+        flex-direction: column;
+        width: 334px;
+        height: 472px;
+        margin: 0px;
+        align-items: center;
+        padding-top: 28px;
+    }
+    .left-text{
+        height: 50%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-text h1{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0px;
+        margin: 0px;
+    }
+    .left-text p{
+        padding: 0px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        ;
+        width: 100%;
+        overflow: hidden;
+        min-width: 20ch;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .watch-live{
+        width: 161px;
+        height: 40px;
+        margin-top: 0px;
+        border-radius: 5px;
+    }
+    .banner-image{
+        height: 50%;
+        margin-top: 5px;
+    }
+    .banner-image img{
+        width: 233px;
+        height: 245px;
+        margin-top: -5px;
+    }
+
+    .nav-blogs{
+        flex-direction: column;
+        width: 393px;
+        row-gap: 20px;
+        align-items: center;
+        margin-top: 24px;
+    }
+    nav{
+        background-color: white;
+    }
+    .btn{
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer{
+        width: 393px;
+        height: 412px;
+        margin-top: 24px;
+    }
+    .logo{
+        padding: 24px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+    }
+    hr{
+        margin: 0px;
+        width: 393px;     
+    }
+    .quick-nav{
+        padding: 24px 0px 0px 0px;
+        width: 100%;
+    }
+    .quick-nav ul{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding-left: 0px;
+    }
 }
