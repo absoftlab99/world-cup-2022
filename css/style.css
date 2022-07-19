@@ -161,3 +161,38 @@ blogs styles
 .status p{
     margin: 0px;
 }
+
+/* ------------------
+Footer section styles 
+---------------------*/
+footer{
+    height: 444px;
+    background: #161616;
+    margin-top: 130px;
+}
+.logo{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 130px;
+}
+hr{
+    margin-top: 42px;
+    width: 1320px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.quick-nav{
+    padding: 50px 0px 130px 0px;
+}
+.quick-nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+.quick-nav ul li{
+    color: white;
+}
